@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <titlr>prsktikum 9</titlr>
+    </head>
+    <body>
+        <div style="text-align:center">
+        <button onclick="playpause()">play/pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button><br><br>
+        <vidio id="vidio1" width="420">
+            <source src="pixar Vgel.mp4" type="vidio/mp4">
+                your browser does not support HTML5 vidio.
+        </vidio>
+    </div>
+    <script>
+    var myvidio = document.getElementById("vidio1);
+    function playpouse() {
+        if(myvidio.paused)
+        myvidio.play();
+        else
+        myvidio.pouse();
+    }
+    funcion makeBig(){
+        myvidio.width =560;
+
+    }
+    function makeSmall(){
+        myvidio.width =320;
+    }
+    funtion makenormal(){
+        myvidio.width = 420;
+    }
+    </script>
+    </body>
+</html>
